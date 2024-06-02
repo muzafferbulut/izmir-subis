@@ -1,0 +1,15 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+}
+
+.leaflet-control-layers-selector label:hover {
+    background-color: rgba(202, 13, 13, 0.1);
+}
