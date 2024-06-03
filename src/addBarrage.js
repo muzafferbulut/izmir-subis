@@ -1,6 +1,8 @@
 // basemap.js dosyasını içe aktar
 import { map } from './basemap.js';
 
+export var barrageList;
+
 // Baraj listesi
 var barrageList = [
     {
