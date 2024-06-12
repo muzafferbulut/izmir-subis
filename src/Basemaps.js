@@ -4,7 +4,7 @@ export var map;
 // DOMContentLoaded olayını dinleyen fonksiyon
 document.addEventListener('DOMContentLoaded', function() {
     // İzmir'in koordinatları (38.4237, 27.1428) ve başlangıç yakınlaştırma seviyesi (13)
-    map = L.map('map').setView([38.4637, 27.15428], 10);
+    map = L.map('map').setView([38.4637, 27.15428], 9);
 
     // OpenStreetMap döşeme katmanı
     var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

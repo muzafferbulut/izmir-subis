@@ -1,10 +1,9 @@
-import { map } from './basemap.js';
-import { barrageList } from './barrageList.js';
-
-var barajDurumLink = "https://openapi.izmir.bel.tr/api/izsu/barajdurum";
+import { map } from './Basemaps.js';
+import { barrageList } from './BarrageList.js';
+import {barajDurum} from './Services.js';
 
 // fetch ile baraj durum verisini alma
-fetch(barajDurumLink)
+fetch(barajDurum)
     .then(response => response.json())
     .then(data => {
         data.forEach(item => {
@@ -38,8 +37,6 @@ fetch(barajDurumLink)
 
                     L.marker([barrage.latitude, barrage.longitude], { icon: icon })
                         .addTo(map)
-                        .bindPopup(`<b>${barrage.name}</b><br>Doluluk Oranı: ${barrage.dolulukOrani}`);
-
                 }
             });
         });

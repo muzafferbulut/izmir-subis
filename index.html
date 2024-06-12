@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script type="module" src="src/basemap.js"></script>
-    <script type="module" src="src/index.js"></script>
+    <script type="module" src="src/Services.js"></script>
+    <script type="module" src="src/Basemaps.js"></script>
+    <script type="module" src="src/AddBarrage.js"></script>
+    <script type="module" src="src/ArizaKaynakliSuKesintileri.js"></script>
 </head>
 <body>
-    <div id="map"></div>
+    <div id="flex-container">
+        <div id="left-section" class="flex-item">
+            <div id="map"></div>
+        </div>
+        <div id="right-section" class="flex-item">
+            <div id="kesintilist">
+            </div>
+        </div>
+    </div>
 </body>
 </html>

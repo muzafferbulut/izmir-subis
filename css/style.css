@@ -5,7 +5,43 @@ html, body{
     width: 100%;
 }
 
-#map{
-    width: 100%;
-    height: 100%;
+#map {
+    width: 99%;
+    height: 99%;
+    background-color: #bbdefb; /* Harita alanı arka plan rengi */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Hafif yuvarlak köşeler */
+}
+
+#kesintilist{
+    max-height: 100vh;
+    overflow: auto;
+}
+
+/* Flex container için stiller */
+#flex-container {
+    display: flex;
+    height: 100%; /* Sayfanın tamamını kapla */
+}
+
+/* Sol ve sağ bölüm stilleri */
+#flex-item {
+    flex: 1; /* Eşit genişlikte iki bölüm oluştur */
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Padding ve border hesabı içeriğin dışında kalsın */
+}
+
+/* Sol bölüm özel stilleri */
+#left-section {
+    width: 70%;
+    background-color: #f0f0f0;
+}
+
+/* Sağ bölüm özel stilleri */
+#right-section {
+    width: 30%;
+    background-color: #e0e0e0;
 }
