@@ -43,5 +43,29 @@ html, body{
 /* Sağ bölüm özel stilleri */
 #right-section {
     width: 30%;
-    background-color: #e0e0e0;
+    background-color: #d6eedc;
+}
+
+.card {
+    border: 2px solid #16d8b8;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card div {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+.card strong {
+    width: 150px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.card span {
+    flex-grow: 1;
 }
